@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect, useContext } from "react";
 import { account } from "../appwriteConfig";
 import { useNavigate } from "react-router";
-import { ID} from 'appwrite';
+import { ID } from 'appwrite';
 
 const AuthContext = createContext()
 
@@ -58,8 +58,8 @@ export const AuthProvider = ({children}) => {
 
             await account.createEmailSession(credentials.email, credentials.password1)
             let accountDetails = await account.get();
-            setUser(accountDetails);
-            navigate('/');
+            setUser(accountDetails)
+            navigate('/')
         }catch(error){
             console.error(error)
         }
