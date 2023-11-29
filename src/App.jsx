@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Room from './pages/Room'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
-import PrivateRoutes from './components/PrivateRoutes'
+import PrivateRoutes from './utils/PrivateRoutes'
 
 import { AuthProvider } from './utils/AuthContext'
 
