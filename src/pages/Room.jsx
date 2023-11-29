@@ -104,7 +104,7 @@ const Room = () => {
                   {message?.username ? (
                     <span>{message.username}</span>
                   ) :
-                    (<span>Anônimo</span>)
+                    (<span>???</span>)
                   }
                 </p>
                 <span>
@@ -126,7 +126,7 @@ const Room = () => {
               className='message--input'
               required
               maxLength="1000"
-              placeholder="Digite sua mensagem"
+              placeholder="Say something"
               onChange={(e) => {
                 setMessageBody(e.target.value);
               }}
@@ -134,7 +134,7 @@ const Room = () => {
             ></textarea>
           </div>
           <div className="send-btn--wrapper">
-            <input type="submit" value="Enviar" className="btn btn--secondary" />
+            <input type="submit" value="Send" className="btn btn--secondary" />
           </div>
         </form>
       </div>

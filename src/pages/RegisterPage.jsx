@@ -14,6 +14,7 @@ const RegisterPage = () => {
         let value = e.target.value 
     
         setCredentials({...credentials, [name]:value})
+        // console.log('CREDS:', credentials)
       }
 
   return (
@@ -22,13 +23,13 @@ const RegisterPage = () => {
 
         <form onSubmit={(e) => {handleUserRegister(e, credentials)}}>
           <div className="field--wrapper">
-                <label>Nome:</label>
+                <label>Name:</label>
                 <input 
                   required
                   type="text" 
                   name="name"
                   value={credentials.name}
-                  placeholder="Digite seu nome..."
+                  placeholder="Enter your name..."
                   onChange={(e) => {handleInputChange(e)}}
                 />
             </div>
@@ -39,31 +40,31 @@ const RegisterPage = () => {
                   required
                   type="email" 
                   name="email"
-                  placeholder="Digite seu email..."
+                  placeholder="Enter your email..."
                   value={credentials.email}
                   onChange={(e) => {handleInputChange(e)}}
                 />
             </div>
 
             <div className="field--wrapper">
-                <label>Senha:</label>
+                <label>Password:</label>
                 <input 
                   required
                   type="password" 
                   name="password1"
-                  placeholder="Digite uma senha..."
+                  placeholder="Enter a password..."
                   value={credentials.password1}
                   onChange={(e) => {handleInputChange(e)}}
                 />
             </div>
 
             <div className="field--wrapper">
-                <label>Confirme sua senha:</label>
+                <label>Confirm password:</label>
                 <input 
                   required
                   type="password" 
                   name="password2"
-                  placeholder="Digite novamente sua senha..."
+                  placeholder="Comfirm your password..."
                   value={credentials.password2}
                   onChange={(e) => {handleInputChange(e)}}
                 />

@@ -10,7 +10,7 @@ const Header = () => {
         <div className='header--wrapper'>
             {user ? (
                 <>
-                    Bem-vindo, {user.name}!
+                    Welcome, {user.name}!
                     <LogOut onClick={handleUserLogout} className='header--link' />
                 </>
             ) : (

@@ -47,7 +47,7 @@ export const AuthProvider = ({children}) => {
         e.preventDefault()
 
         if(credentials.password1 !== credentials.password2){
-            alert('As senhas não são iguais! Por favor, tente novamente.');
+            alert('The passwords dont match!');
             return 
         }
 
@@ -74,7 +74,7 @@ export const AuthProvider = ({children}) => {
 
     return(
         <AuthContext.Provider value={contextData}>
-            {loading ? <p>Carregando...</p> : children}
+            {loading ? <p>Loading...</p> : children}
         </AuthContext.Provider>
     )
 }

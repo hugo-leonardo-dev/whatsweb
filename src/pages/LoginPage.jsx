@@ -34,18 +34,18 @@ const LoginPage = () => {
                         type="email"
                         required 
                         name="email" 
-                        placeholder='Digite seu email...'
+                        placeholder='Enter your email...'
                         value={credentials.email}
                         onChange={handleInputChange}
                         />
                 </div>
                 <div className='field--wrapper'>
-                    <label>Senha: </label>
+                    <label>Password: </label>
                     <input 
                         type="password"
                         required 
                         name="password" 
-                        placeholder='Digite sua senha...'
+                        placeholder='Enter your password...'
                         value={credentials.password}
                         onChange={handleInputChange}
                         />
@@ -55,10 +55,10 @@ const LoginPage = () => {
                     <input 
                         className='btn btn--lg btn--main'
                         type="submit" 
-                        value="Entrar" />
+                        value="Login" />
                 </div>
             </form>
-            <p>Não tem uma conta? Registre-se <Link to="/register"> aqui </Link></p>
+            <p>Don't have a account? Click <Link to="/register">here</Link></p>
         </div>
     </div>
   )
