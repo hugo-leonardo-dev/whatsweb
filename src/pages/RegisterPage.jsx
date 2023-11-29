@@ -64,7 +64,7 @@ const RegisterPage = () => {
                   required
                   type="password" 
                   name="password2"
-                  placeholder="Comfirm your password..."
+                  placeholder="Confirm your password..."
                   value={credentials.password2}
                   onChange={(e) => {handleInputChange(e)}}
                 />
